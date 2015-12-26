@@ -179,3 +179,16 @@ def cc(message):
 def verify(name):
     return name
     #USED TO VERIFY IF A NAME IS ON THE LIST OR NOT
+    
+def nameGen(n):             # This function is used to let the user generate a list of unique names to draw from
+	names = [""]*n          # Defines the list of length n
+	for i in range(n):      
+		success = False     # Begins False, set to True at beginning, but if the name has been used it becomes False and repeats
+		while(success==False):  # While the name is not unique
+			names[i] = input("Enter name: ")    # Asks the user to input the name of the person in the list
+			success = True                      # Sets success to True (will stay True if the name is unique to the list names)
+			for j in range(i):
+				if(names[j] == names[i]):       # If not unique, set success to False and prompt the user to enter a different name
+					success = False
+					print("This name has already been chosen. Please choose another.")  # Informs the user the name is in the list
+    return names                                # Returns the list of names for further manipulation
