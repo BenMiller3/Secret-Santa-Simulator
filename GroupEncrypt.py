@@ -4,7 +4,7 @@
 
 import random
 
-def gen(name1,name2,name3):
+def gen(name1,name2,name3,names):
     code = name1
     salt1 = str(round(random.random()*9))
     salt2 = str(chr(round(random.random()*25)+65))
@@ -12,124 +12,124 @@ def gen(name1,name2,name3):
 
     x = 0
 
-#Default names I had used for testing: [Julia,Emily,Ben,Jess,Brandon,George,Cal,Sydney,Cam,Cameron,Zach,]
+# The list of names must be 12 names long for now.
 
-    if(name1 == "julia"):
+    if(name1 == names[0]):
         p1 = "DOG"
-    elif(name1 == "emily"):
+    elif(name1 == names[1]):
         p1 = "CAT"
-    elif(name1 == "ben"):
+    elif(name1 == names[2]):
         p1 = "ANT"
-    elif(name1 == "michelle"):
+    elif(name1 == names[3]):
         p1 = "MIK"
-    elif(name1 == "jess"):
+    elif(name1 == names[4]):
         p1 = "JUG"
-    elif(name1 == "brandon"):
+    elif(name1 == names[5]):
         p1 = "BAR"
-    elif(name1 == "george"):
+    elif(name1 == names[6]):
         p1 = "JOB"
-    elif(name1 == "cal"):
+    elif(name1 == names[7]):
         p1 = "CAL"
-    elif(name1 == "sydney"):
+    elif(name1 == names[8]):
         p1 = "TIP"
-    elif(name1 == "cam"):
+    elif(name1 == names[9]):
         p1 = "MAC"
-    elif(name1 == "cameron"):
+    elif(name1 == names[10]):
         p1 = "HOW"
-    elif(name1 == "zach"):
+    elif(name1 == names[11]):
         p1 = "ZIP"
     else:
         p1 = "XXX"
 
-    if(name2 == "julia"):
+    if(name2 == names[0]):
         p2 = str(10 + round(random.random()*7)*12)
-    elif(name2 == "emily"):
+    elif(name2 == names[1]):
         p2 = str(11 + round(random.random()*7)*12)
-    elif(name2 == "ben"):
+    elif(name2 == names[2]):
         p2 = str(12 + round(random.random()*7)*12)
-    elif(name2 == "michelle"):
+    elif(name2 == names[3]):
         p2 = str(13 + round(random.random()*7)*12)
-    elif(name2 == "jess"):
+    elif(name2 == names[4]):
         p2 = str(14 + round(random.random()*7)*12)
-    elif(name2 == "brandon"):
+    elif(name2 == names[5]):
         p2 = str(15 + round(random.random()*7)*12)
-    elif(name2 == "george"):
+    elif(name2 == names[6]):
         p2 = str(16 + round(random.random()*7)*12)
-    elif(name2 == "cal"):
+    elif(name2 == names[7]):
         p2 = str(17 + round(random.random()*7)*12)
-    elif(name2 == "sydney"):
+    elif(name2 == names[8]):
         p2 = str(18 + round(random.random()*7)*12)
-    elif(name2 == "cam"):
+    elif(name2 == names[9]):
         p2 = str(19 + round(random.random()*7)*12)
-    elif(name2 == "cameron"):
+    elif(name2 == names[10]):
         p2 = str(20 + round(random.random()*7)*12)
-    elif(name2 == "zach"):
+    elif(name2 == names[11]):
         p2 = str(21 + round(random.random()*7)*12)
     else:
         p2 = "00"
     num = str(round(random.random()*9))
 
-    if(name3 == "julia"):
+    if(name3 == names[0]):
         x = round(random.random()*8)
         if(x%2!=0):
             x = x + 1
         y = 78+(random.random()*12)
         z = "L"
-    elif(name3 == "emily"):
+    elif(name3 == names[1]):
         x = round(random.random()*8)
         if(x%2!=0):
             x = x + 1
         y = 78+round(random.random()*12)
         z = "I"
-    elif(name3 == "ben"):
+    elif(name3 == names[2]):
         if(x%2==0):
             x = x + 1
         y = 65+round(random.random()*12)
         z = "N"
-    elif(name3 == "michelle"):
+    elif(name3 == names[3]):
         x = round(random.random()*8)
         if(x%2!=0):
             x = x + 1
         y = 78+round(random.random()*12)
         z = "C"
-    elif(name3 == "jess"):
+    elif(name3 == names[4]):
         x = round(random.random()*8)
         if(x%2!=0):
             x = x + 1
         y = 65+round(random.random()*12)
         z = "S"
-    elif(name3 == "brandon"):
+    elif(name3 == names[5]):
         if(x%2==0):
             x = x + 1
         y = 65+round(random.random()*12)
         z = "A"
-    elif(name3 == "george"):
+    elif(name3 == names[6]):
         if(x%2==0):
             x = x + 1
         y = 78+round(random.random()*12)
         z = "O"
-    elif(name3 == "cal"):
+    elif(name3 == names[7]):
         if(x%2==0):
             x = x + 1
         y = 78+round(random.random()*12)
         z = "L"
-    elif(name3 == "sydney"):
+    elif(name3 == names[8]):
         x = round(random.random()*8)
         if(x%2!=0):
             x = x + 1
         y = 65+round(random.random()*12)
         z = "D"
-    elif(name3 == "cam"):
+    elif(name3 == names[9]):
         if(x%2==0):
             x = x + 1
         y = 78+round(random.random()*12)
         z = "M"
-    elif(name3 == "cameron"):
+    elif(name3 == names[10]):
         if(x%2==0):
             x = x + 1
         y = 65+round((random.random()*12))
         z = "M"
-    elif(name3 == "zach"):
+    elif(name3 == names[11]):
         x = round(random.random()*8)
         if(x%2!=0):
             x = x + 1
@@ -149,6 +149,8 @@ def gen(name1,name2,name3):
     pepper3 = str(chr(round(random.random()*25)+65))
     
     return salt1+salt2+salt3+p1+p2+p3+pepper1+pepper2+pepper3
+
+#Names given must be those that are within the list, if they are not then there will be an error.
 
 def main():
     name = ""
@@ -191,4 +193,5 @@ def nameGen(n):             # This function is used to let the user generate a l
 				if(names[j] == names[i]):       # If not unique, set success to False and prompt the user to enter a different name
 					success = False
 					print("This name has already been chosen. Please choose another.")  # Informs the user the name is in the list
-    return names                                # Returns the list of names for further manipulation
+	return names
+
