@@ -13,7 +13,7 @@ def gen(name1,name2,name3,names):
     x = 0
 
 # The list of names must be 12 names long for now.
-
+# 3 char long code given for each name. a total of 32^3 combinations for naming mechanisms available
     if(name1 == names[0]):
         p1 = "DOG"
     elif(name1 == names[1]):
@@ -41,6 +41,7 @@ def gen(name1,name2,name3,names):
     else:
         p1 = "XXX"
 
+# If the names are the same then insert random
     if(name2 == names[0]):
         p2 = str(10 + round(random.random()*7)*12)
     elif(name2 == names[1]):
