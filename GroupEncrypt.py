@@ -179,8 +179,11 @@ def cc(message):
         code = code + temp3
     return code
 
-def verify(name):
-    return name
+def verify(name,names):
+	for i in range(len(name)):
+		if(names[i] == name):
+			return False 
+    return True
     #USED TO VERIFY IF A NAME IS ON THE LIST OR NOT
     
 def nameGen(n):             # This function is used to let the user generate a list of unique names to draw from
