@@ -9,6 +9,8 @@ Main parts to this project:
 4. Once everyone has chosen, the program then recieves the data and selects the best option possible in order for everyone to have their highest ranked person, while still having everyone in the group be selected.
 5. The program then will email each participant of who they were drawn.
 
-What separates this secret santa simulator from the rest is that this one is not random, in an office of 200 people you may only work with/know 10-20 people. Getting someone you have no idea who they are takes the fun away and discourages secret santa from becoming something for larger groups.
+What separates this secret santa simulator from the rest is that this one is not random, in an office of 200 people you may only work with/know 10-20 people. Getting someone you have no idea who they are takes the fun away and discourages secret santa from becoming something for larger groups. 
+
+Uses custom encryption methodology and intricate user interfaces.
 
 This program is still in the early stages of development and is far, far from being completed but will be gradual. Any help would be greatly appreciated. Thanks
