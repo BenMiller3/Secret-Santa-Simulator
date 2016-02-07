@@ -199,3 +199,8 @@ def nameGen(n):             # This function is used to let the user generate a l
 					print("This name has already been chosen. Please choose another.")  # Informs the user the name is in the list
 	return names
 
+def randomize(a[]):
+	for i in range(len(a)):
+		t = a[i]
+		a[i] = round(random.random()*len(a))
+		a[t] = a[i]
